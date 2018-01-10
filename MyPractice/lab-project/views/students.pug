@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p This is the #{title} page, friend!
+
+  if (students)
+    p List of Students
+    .students.col-md-8
+      table.table#studentList
+        thead
+          th Name
+          th Email
+        each student in students
+          tr 
+            td #{student.nameFirst} #{student.nameLast}
+            td #{student.email}
+
+  else 
+    p No Students Found
