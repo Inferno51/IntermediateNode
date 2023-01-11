@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "knex": "^0.12.9",
+    "knex": "^2.4.0",
     "pg": "^6.1.5"
   },
   "devDependencies": {},
